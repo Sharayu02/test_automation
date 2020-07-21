@@ -3,9 +3,13 @@ package stepDef;
 
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.AfterClass;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import pages.SearchFlightPage;
 import util.ConfigReader;
 
@@ -33,8 +37,8 @@ public class SearchFlight extends ConfigReader
     }
 
 
-    @When("I enter departure city as {string}, arrival city as {string}, departure date as {int}, Passengers as {int}")
-    public void iEnterDepartureCityAsArrivalCityAsDepartureDateAsPassengersAs(String arg0, String arg1, int arg2, int arg3)
+    @When("I enter departure city as {string}, arrival city as {string}, departure date as {string}, Passengers as {int}")
+    public void iEnterDepartureCityAsArrivalCityAsDepartureDateAsPassengersAs(String arg0, String arg1, String arg2, int arg3)
     {
         searchFlightPage.searchFlight(arg0,arg1,arg2,arg3);
     }
@@ -44,4 +48,17 @@ public class SearchFlight extends ConfigReader
     {
         searchFlightPage.searchFlight1(arg0,arg1,arg2,arg3);
     }
+
+    @AfterClass
+    public void tearDown(Scenario scenario) {
+        // Checks if scenario is failed or not. It will take screen shot and puts them in target folder.
+        if (scenario.isFailed()) {
+            byte[] source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(source, "image/png");
+        }
+        driver.close();
+    }
+
+
+
 }

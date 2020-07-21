@@ -11,13 +11,13 @@ Feature: searchFlight
   @flight
   Scenario: To search flight from Pune to Chennai
     When I enter details and search flights
-    |Departure City|Arrival City|Departure date|Passengers|
-    |Pune          |Chennai     |25            |1         |
+    |Departure City|Arrival City|Departure Date |Passengers|
+    |Pune          |Chennai     |21/07/2020     |1         |
     Then I should see flight options
 
   @flight1
   Scenario: To search flight from Pune to Chennai
-     When I enter departure city as "Pune", arrival city as "Chennai", departure date as 25, Passengers as 1
+     When I enter departure city as "Pune", arrival city as "Chennai", departure date as "21/07/2020", Passengers as 1
      Then I should see flight options
 
   @flight2
@@ -27,6 +27,6 @@ Feature: searchFlight
 
     Examples:
     |Departure City|Arrival City|Departure date|Passenger|
-    |Pune          |Chennai     |25            |1        |
+    |Pune          |Chennai     |21/07/2020    |1        |
 
 

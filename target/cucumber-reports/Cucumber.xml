@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.958">
-<testcase classname="searchFlight" name="To search flight from Pune to Chennai" time="20.843">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.213">
+<testcase classname="searchFlight" name="To search flight from Pune to Chennai" time="29.078">
 <system-out><![CDATA[Given I'am on cleartrip search flight page..................................passed
 When I enter details and search flights.....................................passed
 Then I should see flight options............................................passed

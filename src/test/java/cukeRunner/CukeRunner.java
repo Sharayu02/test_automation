@@ -21,14 +21,6 @@ import util.ConfigReader;
 
 public class CukeRunner extends ConfigReader
 {
-    @AfterClass
-    public void tearDown(Scenario scenario) {
-        // Checks if scenario is failed or not. It will take screen shot and puts them in target folder.
-        if (scenario.isFailed()) {
-            byte[] source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(source, "image/png");
-        }
-        driver.close();
-    }
+
 
 }
