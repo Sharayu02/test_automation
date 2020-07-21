@@ -1,14 +1,12 @@
 package cukeRunner;
 
 
-import io.cucumber.java.Scenario;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-import org.junit.AfterClass;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import util.ConfigReader;
+
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -19,7 +17,7 @@ import util.ConfigReader;
 )
 
 
-public class CukeRunner extends ConfigReader
+public class CukeRunner
 {
 
 

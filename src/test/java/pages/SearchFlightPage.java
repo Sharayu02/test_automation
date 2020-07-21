@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-
 public class SearchFlightPage extends ConfigReader
 {
     Utilities util= new Utilities();
