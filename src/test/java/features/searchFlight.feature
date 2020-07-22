@@ -1,8 +1,9 @@
-Feature: searchFlight
+Feature: Search flights
 
   As A User
   I want to search flights
-  So That I can view flight options
+  So That I can view available flight options
+
 
   Background:
     Given I'am on cleartrip search flight page

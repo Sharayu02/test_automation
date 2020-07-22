@@ -3,11 +3,12 @@ package stepDef;
 
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.AfterClass;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import pages.SearchFlightPage;
@@ -17,10 +18,15 @@ public class SearchFlight extends ConfigReader
 {
     SearchFlightPage searchFlightPage = new SearchFlightPage();
 
+    @Before
+    public void beforeScenario()
+    {
+        ConfigReader.initialization();
+    }
+
     @Given("I'am on cleartrip search flight page")
     public void iAmOnCleartripSearchFlightPage()
     {
-        ConfigReader.initialization();
         searchFlightPage.cleartrip(prop.getProperty("url"));
     }
 
@@ -49,15 +55,17 @@ public class SearchFlight extends ConfigReader
         searchFlightPage.searchFlight1(arg0,arg1,arg2,arg3);
     }
 
-    @AfterClass
+    @After
     public void tearDown(Scenario scenario) {
-        // Checks if scenario is failed or not. It will take screen shot and puts them in target folder.
-        if (scenario.isFailed()) {
-            byte[] source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(source, "image/png");
+        try {
+            if (scenario.isFailed()) {
+                final byte[] screenshot = ((TakesScreenshot) ConfigReader.driver)
+                        .getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenshot, "image/png");
+            }
+        } finally {
+            ConfigReader.driver.quit();
         }
-        driver.close();
     }
-
 
 }
