@@ -36,10 +36,10 @@ public class SearchFlight extends ConfigReader
         searchFlightPage.flightSearch(testData);
     }
 
-    @Then("I should see flight options")
+    @Then("I should see flight book option")
     public void iShouldSeeFlightOptions()
     {
-        searchFlightPage.result();
+        searchFlightPage.verifyFlightListings();
     }
 
 
@@ -61,7 +61,7 @@ public class SearchFlight extends ConfigReader
             if (scenario.isFailed()) {
                 final byte[] screenshot = ((TakesScreenshot) ConfigReader.driver)
                         .getScreenshotAs(OutputType.BYTES);
-                scenario.embed(screenshot, "image/png");
+                scenario.attach(screenshot,"image/png", "");
             }
         } finally {
             ConfigReader.driver.quit();

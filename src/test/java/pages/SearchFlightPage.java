@@ -25,6 +25,7 @@ public class SearchFlightPage extends ConfigReader
     private By adult=By.id("Adults");
     private By search=By.id("SearchBtn");
     private By departureDate=By.name("depart_date");
+    private By flightList = By.className("listViewNav");
 
     public SearchFlightPage() {
         PageFactory.initElements(driver, this);
@@ -43,9 +44,9 @@ public class SearchFlightPage extends ConfigReader
         util.click(fromCity);
         util.enterText(fromCity,data.get(0).get("Departure City"));
         util.waitForVisibilityOfElement(fromList);
-        fromCity.findElement(driver).sendKeys(Keys.DOWN);
-        fromCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(depart.findElement(driver).getAttribute("value").contains("PNQ"))
+        driver.findElement(fromCity).sendKeys(Keys.DOWN);
+        driver.findElement(fromCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(depart).getAttribute("value").contains("PNQ"))
         {
             System.out.println("Departue City verified");
             Assert.assertTrue(true);
@@ -54,16 +55,16 @@ public class SearchFlightPage extends ConfigReader
         util.click(toCity);
         util.enterText(toCity,data.get(0).get("Arrival City"));
         util.waitForVisibilityOfElement(toList);
-        toCity.findElement(driver).sendKeys(Keys.DOWN);
-        toCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(to.findElement(driver).getAttribute("value").contains("MAA"))
+        driver.findElement(toCity).sendKeys(Keys.DOWN);
+        driver.findElement(toCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(to).getAttribute("value").contains("MAA"))
         {
             System.out.println("Arrival City verified");
             Assert.assertTrue(true);
         }
         //Departure date
         util.click(date);
-        if(departureDate.findElement(driver).getAttribute("value").contains(data.get(0).get("Departure Date")))
+        if(driver.findElement(departureDate).getAttribute("value").contains(data.get(0).get("Departure Date")))
         {
             System.out.println("Departue date verified");
             Assert.assertTrue(true);
@@ -85,9 +86,9 @@ public class SearchFlightPage extends ConfigReader
         util.click(fromCity);
         util.enterText(fromCity,arg0);
         util.waitForVisibilityOfElement(fromList);
-        fromCity.findElement(driver).sendKeys(Keys.DOWN);
-        fromCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(depart.findElement(driver).getAttribute("value").contains("PNQ"))
+        driver.findElement(fromCity).sendKeys(Keys.DOWN);
+        driver.findElement(fromCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(depart).getAttribute("value").contains("PNQ"))
         {
             System.out.println("Departue City verified");
             Assert.assertTrue(true);
@@ -96,9 +97,9 @@ public class SearchFlightPage extends ConfigReader
         util.click(toCity);
         util.enterText(toCity,arg1);
         util.waitForVisibilityOfElement(toList);
-        toCity.findElement(driver).sendKeys(Keys.DOWN);
-        toCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(to.findElement(driver).getAttribute("value").contains("MAA"))
+        driver.findElement(toCity).sendKeys(Keys.DOWN);
+        driver.findElement(toCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(to).getAttribute("value").contains("MAA"))
         {
             System.out.println("Arrival City verified");
             Assert.assertTrue(true);
@@ -126,9 +127,9 @@ public class SearchFlightPage extends ConfigReader
         util.click(fromCity);
         util.enterText(fromCity,arg0);
         util.waitForVisibilityOfElement(fromList);
-        fromCity.findElement(driver).sendKeys(Keys.DOWN);
-        fromCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(depart.findElement(driver).getAttribute("value").contains("PNQ"))
+        driver.findElement(fromCity).sendKeys(Keys.DOWN);
+        driver.findElement(fromCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(depart).getAttribute("value").contains("PNQ"))
         {
             System.out.println("Departue City verified");
             Assert.assertTrue(true);
@@ -137,16 +138,16 @@ public class SearchFlightPage extends ConfigReader
         util.click(toCity);
         util.enterText(toCity,arg1);
         util.waitForVisibilityOfElement(toList);
-        toCity.findElement(driver).sendKeys(Keys.DOWN);
-        toCity.findElement(driver).sendKeys(Keys.ENTER);
-        if(to.findElement(driver).getAttribute("value").contains("MAA"))
+        driver.findElement(toCity).sendKeys(Keys.DOWN);
+        driver.findElement(toCity).sendKeys(Keys.ENTER);
+        if(driver.findElement(to).getAttribute("value").contains("MAA"))
         {
             System.out.println("Arrival City verified");
             Assert.assertTrue(true);
         }
         //Departure date
         util.click(date);
-        if(departureDate.findElement(driver).getAttribute("value").contains(arg2))
+        if(driver.findElement(departureDate).getAttribute("value").contains(arg2))
         {
             System.out.println("Departue date verified");
             Assert.assertTrue(true);
@@ -159,8 +160,13 @@ public class SearchFlightPage extends ConfigReader
         util.click(search);
     }
 
-    public void result()
+    public void verifyFlightListings()
     {
-
+        if(driver.findElement(flightList)!= null)
+        {
+            System.out.println("Flight listings Verified");
+            Assert.assertTrue(true);
+        }
     }
 }
+

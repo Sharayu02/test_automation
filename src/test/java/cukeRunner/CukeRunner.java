@@ -8,10 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features/searchFlight.feature",
         glue = {"stepDef"},
-        plugin = {"pretty", "html:target/cucumber-html-report",
-                "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
-                "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml"},
-        tags = {"@flight"}
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        tags = "@flight"
 )
 
 

@@ -12,14 +12,11 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '5.7.0'
-    testCompile group:  'io.cucumber', name: 'cucumber-java', version: '5.7.0'
-    testCompile group:  'io.cucumber', name: 'cucumber-core', version: '5.7.0'
-    testCompile group:  'io.cucumber', name: 'cucumber-core', version: '5.7.0'
-    testCompile group:  'info.cukes', name: 'gherkin', version: '2.12.2'
-    testCompile group:  'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-    testCompile 'com.relevantcodes:extentreports:2.41.2'
-    testCompile 'com.vimalselvam:cucumber-extentsreport:3.0.2'
-    testCompile 'com.aventstack:extentreports:3.1.1'
-    testCompile group: 'io.rest-assured', name: 'rest-assured',version: '4.3.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '6.+'
+    testCompile group: 'io.cucumber', name: 'cucumber-java', version: '6.+'
+    testCompile group: 'io.cucumber', name: 'cucumber-core', version: '6.+'
+    testCompile group: 'io.cucumber', name: 'cucumber-core', version: '6.+'
+    testCompile group: 'info.cukes', name: 'gherkin', version: '2.12.2'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testCompile group: 'tech.grasshopper', name: 'extentreports-cucumber6-adapter', version: '1.1.0'
 }
