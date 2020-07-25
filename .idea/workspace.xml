@@ -11,31 +11,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/cukeRunner/CukeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/cukeRunner/CukeRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/pages/SearchFlightPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pages/SearchFlightPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/stepDef/SearchFlight.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/stepDef/SearchFlight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/util/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/util/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/cukeRunner.CukeRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/cukeRunner.CukeRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/searchFlight.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/cukeRunner.CukeRunner.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/cukeRunner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/cukeRunner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-cukeRunner.CukeRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-cukeRunner.CukeRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-searchFlight.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/cukeRunner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-cukeRunner.CukeRunner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cukeRunner/CukeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cukeRunner/CukeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/blog.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/blog.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/blog_background.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/blog_background.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/blog_outline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/blog_outline.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/searchFlight.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/searchFlight.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SearchFlightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SearchFlightPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/SearchFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/SearchFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/Cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +56,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1etXPRsR0KtbJEaZUKezzBbIfY4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,10 +67,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -163,22 +157,22 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1592" height="295" key="GridCell.Tab.0.bottom" timestamp="1595382919238">
+    <state width="1592" height="404" key="GridCell.Tab.0.bottom" timestamp="1595634007074">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
-    <state width="1592" height="295" key="GridCell.Tab.0.bottom/0.23.1680.957@0.23.1680.957" timestamp="1595382919238" />
-    <state width="1592" height="295" key="GridCell.Tab.0.center" timestamp="1595382919237">
+    <state width="1592" height="404" key="GridCell.Tab.0.bottom/0.23.1680.957@0.23.1680.957" timestamp="1595634007074" />
+    <state width="1592" height="404" key="GridCell.Tab.0.center" timestamp="1595634007073">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
-    <state width="1592" height="295" key="GridCell.Tab.0.center/0.23.1680.957@0.23.1680.957" timestamp="1595382919237" />
-    <state width="1592" height="295" key="GridCell.Tab.0.left" timestamp="1595382919236">
+    <state width="1592" height="404" key="GridCell.Tab.0.center/0.23.1680.957@0.23.1680.957" timestamp="1595634007073" />
+    <state width="1592" height="404" key="GridCell.Tab.0.left" timestamp="1595634007072">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
-    <state width="1592" height="295" key="GridCell.Tab.0.left/0.23.1680.957@0.23.1680.957" timestamp="1595382919236" />
-    <state width="1592" height="295" key="GridCell.Tab.0.right" timestamp="1595382919237">
+    <state width="1592" height="404" key="GridCell.Tab.0.left/0.23.1680.957@0.23.1680.957" timestamp="1595634007072" />
+    <state width="1592" height="404" key="GridCell.Tab.0.right" timestamp="1595634007073">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
-    <state width="1592" height="295" key="GridCell.Tab.0.right/0.23.1680.957@0.23.1680.957" timestamp="1595382919237" />
+    <state width="1592" height="404" key="GridCell.Tab.0.right/0.23.1680.957@0.23.1680.957" timestamp="1595634007073" />
     <state width="1592" height="316" key="GridCell.Tab.1.bottom" timestamp="1595305242967">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
@@ -195,10 +189,10 @@
       <screen x="0" y="23" width="1680" height="957" />
     </state>
     <state width="1592" height="316" key="GridCell.Tab.1.right/0.23.1680.957@0.23.1680.957" timestamp="1595305242967" />
-    <state x="309" y="82" key="SettingsEditor" timestamp="1595141906926">
+    <state x="309" y="82" key="SettingsEditor" timestamp="1595657029463">
       <screen x="0" y="23" width="1680" height="957" />
     </state>
-    <state x="309" y="82" key="SettingsEditor/0.23.1680.957@0.23.1680.957" timestamp="1595141906926" />
+    <state x="309" y="82" key="SettingsEditor/0.23.1680.957@0.23.1680.957" timestamp="1595657029463" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1595156317657">
       <screen x="0" y="23" width="1680" height="957" />
     </state>

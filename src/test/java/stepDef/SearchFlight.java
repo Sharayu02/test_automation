@@ -3,9 +3,7 @@ package stepDef;
 
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,11 +16,53 @@ public class SearchFlight extends ConfigReader
 {
     SearchFlightPage searchFlightPage = new SearchFlightPage();
 
+    //Scenario Hooks
     @Before
     public void beforeScenario()
     {
         ConfigReader.initialization();
     }
+
+    @After
+    public void tearDown(Scenario scenario) {
+        try {
+            if (scenario.isFailed()) {
+                final byte[] screenshot = ((TakesScreenshot) driver)
+                        .getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot,"image/png", "");
+            }
+        } finally {
+            driver.quit();
+        }
+    }
+
+    // Step Hooks
+    @BeforeStep
+    public void beforeStep()
+    {
+
+    }
+
+    @AfterStep
+    public void afterStep()
+    {
+
+    }
+
+    //Conditional Hooks
+    @Before("@fligth1")
+    public void doSomethingBefore(Scenario scenario)
+    {
+
+    }
+
+    @After("@flight and not @flight1")
+    public void doSomethingAfter(Scenario scenario)
+    {
+
+    }
+
+
 
     @Given("I'am on cleartrip search flight page")
     public void iAmOnCleartripSearchFlightPage()
@@ -36,7 +76,7 @@ public class SearchFlight extends ConfigReader
         searchFlightPage.flightSearch(testData);
     }
 
-    @Then("I should see flight book option")
+    @Then("I should see flight options")
     public void iShouldSeeFlightOptions()
     {
         searchFlightPage.verifyFlightListings();
@@ -55,17 +95,6 @@ public class SearchFlight extends ConfigReader
         searchFlightPage.searchFlight1(arg0,arg1,arg2,arg3);
     }
 
-    @After
-    public void tearDown(Scenario scenario) {
-        try {
-            if (scenario.isFailed()) {
-                final byte[] screenshot = ((TakesScreenshot) ConfigReader.driver)
-                        .getScreenshotAs(OutputType.BYTES);
-                scenario.attach(screenshot,"image/png", "");
-            }
-        } finally {
-            ConfigReader.driver.quit();
-        }
-    }
+
 
 }
